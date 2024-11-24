@@ -1,0 +1,13 @@
+pydicom
+pillow
+tensorflow
+keras
+streamlit
+numpy
+matplotlib
+scikit-learn
+scipy
+pandas
+opencv-python
+seaborn
+protobuf
