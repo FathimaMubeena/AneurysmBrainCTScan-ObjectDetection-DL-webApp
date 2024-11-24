@@ -79,7 +79,7 @@ def main():
     )
 
     # Train the model
-    EPOCHS = 5
+    EPOCHS = 50
     history = model.fit(train_ds,
                         epochs=EPOCHS,
                         validation_data=val_ds)
@@ -91,7 +91,7 @@ def main():
 
     export_deploy_dir = os.path.join(parent_dir, 'deploy/')
     # Get the current date
-    current_date = datetime.datetime.now().strftime("%Y%m%d")
+    current_date = datetime.now().strftime("%Y%m%d")
 
     # Save the model with the date appended to the filename
     model.save(os.path.join(export_deploy_dir, f'model_{current_date}.keras'))

@@ -8,7 +8,7 @@ import os
 # Load your trained model
 def load_model():
     # Load the trained Keras model
-    model_path = os.path.join(os.path.dirname(__file__), 'model_20241117.keras')
+    model_path = os.path.join(os.path.dirname(__file__), 'model_20241118.keras')
 
     # Ensure the model file exists
     if not os.path.exists(model_path):
